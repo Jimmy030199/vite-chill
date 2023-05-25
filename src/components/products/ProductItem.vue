@@ -7,10 +7,13 @@
                     <img :src=" item.imageUrl " class="card-img-top w-100 object-fit-cover" alt="..." style="height:250px;"  @click.prevent="getCommidity(item.id);changeType(item.category)">
                     <div class="product-sort fs-3 fw-bold text-center text-white">{{ item.category }}</div>
                 </div>                             
-                <div class="card-body text-center">
-                    <h5 class="card-title fs-4 fw-bold">{{ item.title }}</h5>
-                    <p class="card-text "><span v-if="item.Isdiscount" class="fs-6 fw-bold text-decoration-line-through text-danger me-2">原價:${{item.origin_price}}元/</span><span class="fs-6 fw-bold">售價:${{item.price}}元</span></p>
-                    <a href="#" class="btn btn-secondary" @click.prevent="plusone(item)"><i class="bi bi-basket2-fill"></i>&nbsp;&nbsp;放入購物車</a>
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <div class="">
+                        <h5 class="card-title fs-4 fw-bold">{{ item.title }}</h5>
+                        <p class="card-text"><span v-if="item.Isdiscount" class="fs-6 fw-bold text-decoration-line-through text-danger me-2">原價:${{item.origin_price}}元/</span><br><span class=" fs-6 fw-bold">售價:${{item.price}}元</span></p>
+                    </div>
+                    
+                    <a href="#" class="d-inline-block btn btn-secondary" @click.prevent="plusone(item)"><i class="bi bi-basket2-fill"></i>&nbsp;&nbsp;放入購物車</a>
                 </div>
           </div>
      </div>
@@ -149,3 +152,9 @@ export default{
     }
 }
 </script>
+
+<style>
+.card-text{
+
+}
+</style>

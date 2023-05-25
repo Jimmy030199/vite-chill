@@ -8,10 +8,10 @@
                         <button class="navbar-toggler" type="button" 
                         data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                           <span class="navbar-toggler-icon"></span>
+                           <span class="fs-3"><i class="bi bi-list"></i></span>
                         </button>    
                    
-                      <div class="collapse navbar-collapse" id="navbarNav">                     
+                      <div class="collapse navbar-collapse" id="navbarNav" >                     
                         <ul class="navbar-nav ms-auto text-center align-items-center">
                           <li class="nav-item ">
                             <router-link class="nav-link navbarlink" to="/">Home</router-link>
@@ -40,7 +40,7 @@
                     <div class="container">
                     <div class="row">
                       <div class="col-12 ">
-                        <p class="text-center my-0 fs-5 fw-bold text-secondary">我的最愛</p>
+                        <p class="my-0 d-flex justify-content-between  "><span class="fs-5 fw-bold text-secondary ">我的最愛</span>  <span class="fs-6 text-danger my-auto" @click="changeState"><i class="bi bi-dash-square-fill"></i></span></p>
                       </div>
                       <div class="col-12 border-top mb-2" v-for="(item,i) in collectArr" :key="'collectArr'+i">
                            <div class="collect-item mt-2 d-flex align-items-center justify-content-between">
@@ -88,6 +88,7 @@ export default{
     const productsStore=useproductsStore()
     const {type}=storeToRefs(productsStore)
 
+
     const navshow=ref(false)
     watchEffect(()=>{
       navshow.value=props.navbarshow
@@ -104,6 +105,7 @@ export default{
     const {showCollection,removecollectionId,alertModalmes}=storeToRefs(statusStore)
    
     const changeState =()=>{
+     
       showCollection.value = !showCollection.value
       readlocal()
 
@@ -190,7 +192,8 @@ export default{
       CartLength,
       getCartLength,
       showCancelMark,
-      linkto
+      linkto,
+
     }
   },
   components:{
@@ -205,12 +208,22 @@ export default{
 <style>
 
 .collection{
- background-color: rgb(255, 255, 255);
- width:300px;
+ background-color: rgba(255, 255, 255, 0.888);
+ width:250px;
  position: fixed;
- right: 50px;
- top:65px;
+ right: -45px;
+ top:250px;
  z-index: 10;
+}
+@media screen and (min-width:992px) { 
+  
+    .collection{
+      background-color: rgb(255, 255, 255);
+      width:300px;
+      position: fixed;
+      right: 50px;
+      top:65px;
+      }
 }
 
 </style>
