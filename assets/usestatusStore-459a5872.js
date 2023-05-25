@@ -1,1 +1,0 @@
-import{B as e}from"./index-5265e79b.js";const s=e("usestatusStore",{state:()=>({isLoading:!1,showCollection:!1,removecollectionId:"",modalmes:{},toastmes:{},alertModalmes:{},cartnextstep:!1,paybotton:!1})});export{s as u};
