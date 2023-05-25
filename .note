@@ -1,0 +1,25 @@
+建立 API 路徑
+chillstore_api
+
+[
+  {
+    "category": "輕食",
+    "content": "麵粉、砂糖、鹽、鮮奶、動物性鮮奶、蛋、奶油、酵母、火腿、起司.",
+    "description": "加入大量的特選火腿與香濃起士，與厚片完熟吐司Q彈嫩滑的口感搭配，每一口都能咬到火腿肉的燻香和起士奶的香味",
+    "id": "-NVjqFRVPQGLbmyiczP3",
+    "imageUrl": "https://images.pexels.com/photos/133578/pexels-photo-133578.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "imagesUrl": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "is_enabled": 1,
+    "origin_price": 1200,
+    "price": 1000,
+    "title": "火腿土司",
+    "unit": "份",
+    "num": 1
+  }
+]

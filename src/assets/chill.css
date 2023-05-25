@@ -1,0 +1,320 @@
+.navbar-nav .nav-link.active.navbarlink{
+    color:rgb(172, 84, 20);
+}
+.mainpic{
+    width: 100%;
+}
+
+.bg-transcolor{
+    background-color: rgb(252, 251, 251);
+}
+
+.fixed-nav {
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 289;
+    background-color: rgba(98, 78, 78, 0.837);
+    transition: all 0.5s ease-out;   
+}
+.fixed-nav a,.fixed-nav button{
+    color:white
+}
+.fixed-nav button{
+    border: 1px solid white;
+}
+.fixed-nav .navbar-nav .nav-link.active.navbarlink{
+    color:cornsilk;
+}
+.cart-pill{
+    top:10px;
+    font-size: 0.5rem!important;
+}
+
+.main-section{
+ position: relative;
+ width: 100%;
+ /* aspect-ratio: 2/1; */
+ background-image: url('https://images.pexels.com/photos/4913313/pexels-photo-4913313.jpeg?auto=compress&cs=tinysrgb&w=1600');
+ background-repeat: no-repeat;
+ background-size:cover;
+ background-position: center;
+}
+.triangle{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 180px solid rgb(255, 255, 255); /* 三角形的高度 */
+  border-left: 300px solid transparent; /* 三角形的底邊長度 */
+  bottom:0;
+  right:0;
+
+}
+.triangle-img{
+    width: 25%;
+    position: absolute;
+    bottom:0;
+    right:0;
+}
+@media screen and (min-width:992px) { 
+    .triangle-img{
+        width: 10%;
+        position: absolute;
+        bottom:0;
+        right:0;
+     
+     }
+}
+
+.wraphight{
+    height: 80vh;
+    margin-top: 5vh;
+}
+
+.note{
+    width: 100%;
+    height:350px;
+    background-color:  rgba(67, 60, 60, 0.741);
+    border-radius: 5%;
+    border: .2px solid white;
+ 
+ }
+
+@media screen and (min-width:992px) { 
+    .note{
+        width: 100%;
+        height:400px;
+        background-color: rgba(67, 60, 60, 0.741);
+     
+     }
+}
+.space-item{
+  
+   height:450px;
+   background-color: rgb(255, 255, 255);
+
+
+}
+.htitle{
+    border-bottom: 3px solid ; 
+}
+
+.img-wrap img{
+    width: 80%;
+    aspect-ratio: 2/1.6;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.main-card{
+    height: 450px;
+    background-image: url('https://images.pexels.com/photos/3186654/pexels-photo-3186654.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-repeat: no-repeat;
+    background-size : cover;
+    background-position: center;
+    transition : all 2s ease-in-out;
+}
+.main-card:hover{
+    background-size : 120% ;
+    
+
+}
+.gray-filter{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.622);
+}
+.gray-filter .box{
+    width: 100%;
+    height: 100%;
+    border: 1.5px solid white;
+}
+.gray-filter .box p{
+    letter-spacing: 0.2rem;
+}
+.sec-section{
+    width: 100%;
+    background-image: url('https://images.pexels.com/photos/4913313/pexels-photo-4913313.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+   }
+.foot-color{
+    background-color: rgba(98, 78, 78, 0.889);
+
+}
+
+/* 產品頁    */
+
+.top-banner{
+height: 250px;
+background-image: url('https://images.pexels.com/photos/5638330/pexels-photo-5638330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+background-repeat: no-repeat;
+background-size : cover;
+background-position: center;
+}
+
+.top-title{
+    background-color: rgba(0, 0, 0, 0.323);
+    border-radius: 10px;
+}
+@media screen and (min-width:992px) { 
+    .top-banner{
+        height: 350px;
+        }
+}
+
+.side-item:hover{
+   background-color: rgba(82, 86, 96, 0.649);
+   color:white
+}
+
+.wrap-img-sort{
+    position: relative;
+
+}
+.card-img-top{
+    
+}
+.love-store{
+    position: absolute;
+    top: 10px;;
+    right:10px;
+}
+.love-store .bi-heart{
+    color: rgb(253, 253, 253);
+}
+
+
+.product-sort{
+    position: absolute;
+    bottom:10px;
+    left:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.397);
+
+}
+
+/* 產品單頁 */
+
+.wrap-product-img{
+    height:400px; 
+    box-shadow: -10px 10px 20px rgba(51, 46, 46, 0.596);
+}
+.itempagesort{
+   border-radius: 10px;
+   background-color: rgba(98, 78, 78, 0.889);
+   color: white;
+}
+.conter:hover{
+   background-color: rgba(98, 78, 78, 0.889);
+}
+.round-wrap{
+    overflow: hidden;
+  
+}
+.all-img{
+    height:250px;
+    /* background-color: bisque; */
+    position: relative;
+    transition: all 0.3s;
+    object-position: 50% 50%;
+
+}
+.single-img{
+    width:25%;
+    flex-shrink: 0;
+    color: white;
+}
+/* @media screen and (min-width:992px) { 
+    .single-img{
+        width:25%;
+        }
+} */
+
+/* cart */
+.top-banner-cart{
+    height: 250px;
+    background-image: url('https://images.pexels.com/photos/2290070/pexels-photo-2290070.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-repeat: no-repeat;
+    background-size : cover;
+    background-position: center;
+    }
+    @media screen and (min-width:992px) { 
+        .top-banne-cart{
+            height: 350px;
+            }
+    }
+    .linebox{
+        height:10px;
+        background-color: rgba(254, 253, 253, 0.429);
+    }
+    .table-imgwarp{
+        width:150px;
+        object-fit: cover;
+    
+    }
+    @media (min-width:992px) { 
+        .table-imgwarp{
+            width:150px;
+            object-fit: cover;
+            }
+    }
+    .table-img{
+        width:100%;
+    }
+    .no-border td {
+        border-top: none !important;
+        border-bottom: none !important;
+      }
+    
+    .no-wrap {
+          white-space: nowrap;
+        }
+      @media (max-width: 991px) {
+        .btn-lg-responsive {
+          font-size: 0.875rem;
+          padding: 0.25rem 0.5rem;
+        }
+      }
+    
+      @media (min-width: 992px) {
+        .btn-lg-responsive {
+          font-size:1.25rem;
+          padding: 0.25rem 0.5rem;
+        }
+      }
+      
+/* step2 買家表單填寫 */
+.payform input{
+    height: 40px;
+}
+
+.payform input::placeholder, .payform textarea::placeholder {
+    color: rgb(120, 110, 110);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+   
+  }
+  .payform select{
+    height: 40px;
+    color: rgb(120, 110, 110);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+
+  }
+  .payform select option {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid gray;
+  }
+  .payform textarea {
+    height: 150px;
+  }
+
+    

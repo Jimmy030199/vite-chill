@@ -1,0 +1,13 @@
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../assets/helpers/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+// @import "../node_modules/bootstrap/scss/root";
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../src/assets/chill.css";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
