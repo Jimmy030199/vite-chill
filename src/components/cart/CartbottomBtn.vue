@@ -5,7 +5,7 @@
                     <button v-if='!showstep2' class="btn btn-lg btn-outline-secondary" @click="goshopping"><i class="bi bi-arrow-left-circle-fill"></i>&nbsp;繼續購物</button>
                     <button v-else class="btn btn-lg btn-outline-secondary" @click="clicktostep1"><i class="bi bi-arrow-left-circle-fill"></i>&nbsp;清單明細</button>
                     <button v-if='!showstep2' class="btn btn-lg bg-dark text-white" @click="clicktoNext">訂購確認&nbsp;<i class="bi bi-arrow-right-circle-fill"></i></button>
-                    <button v-else class="btn btn-lg bg-secondary text-white disabled" @click='clicktoFinal' :class="{paybtnnot:!paybotton}">付款/完成訂單&nbsp;<i class="bi bi-arrow-right-circle-fill"></i></button>
+                    <button v-else class="btn btn-lg bg-secondary text-white " @click='clicktoFinal' :class="{paybtnnot:!paybotton}">付款/完成訂單&nbsp;<i class="bi bi-arrow-right-circle-fill"></i></button>
                 
                 </div>
                 <div class="col-12 d-flex justify-content-center" v-else>
