@@ -11,7 +11,7 @@
                 <div class="note d-flex flex-column justify-content-center align-items-center p-5">
                     <h2 class="text-white mb-3">Chill</h2>
                       <p class="w-100 text-white text-center fs-6 fs-lg-5 pb-3">放慢您的步調，遠離都市喧囂，來場療癒的美食饗宴吧。</p>
-                      <button type="button" class="btn text-white btn-outline-secondary fs-6 fs-lg-4">立即選購&nbsp;&nbsp;<i class="bi bi-shop"></i></button>
+                      <button type="button" class="btn text-white btn-outline-secondary fs-6 fs-lg-4" @click="gotoProducts">立即選購&nbsp;&nbsp;<i class="bi bi-shop"></i></button>
                 </div>
               </div>
         </div>
@@ -74,6 +74,7 @@
 <script>
 import NavbarItem from '../components/NavbarItem.vue'
 import MainCard from '../components/MainCard.vue'
+import { useRouter } from 'vue-router';
 
 
 
@@ -163,6 +164,11 @@ export default {
       window.removeEventListener('resize', writeHeight);
     });
 
+    const router=useRouter()
+    const gotoProducts=()=>{
+      router.push('/products/all')
+    }
+
    
     return {
       navbarEle,
@@ -171,7 +177,9 @@ export default {
       dataforMaincard,
       navbarFixedfun,
       scollToMainCard,
-      writeHeight
+      writeHeight,
+
+      gotoProducts
     }
   },
   components:{
